@@ -303,7 +303,7 @@ function initMap() {
     addMarker({
         coords: { lat: -1.29889, lng: 36.8386003 },
         iconImage: inactiveAgent,
-        content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Account Loggin at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
+        content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Account Loggin at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"> <strong>23 Tasks of 54 (42.6%) completed <strong>Today</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 42.6%" aria-valuenow="42.6" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
     });
 
     //active agent
@@ -316,13 +316,13 @@ function initMap() {
             <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
             </h6>
              <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
-             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <p>Most recent activity: <strong>Reparing Damaged Transfomer Transformer</strong>
              <div class="listview text-align-left text-capitalize pl-0">  
              <div class="listview__header text-align-left text-capitalize text-left">
-             <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
+             <strong>23 Tasks of 54 (42.6%) completed <strong>Today</strong>
              </div> 
              <div class="progress"> 
-             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             <div class="progress-bar progress-bar-warning" style="width: 42.6%" aria-valuenow="42.6" aria-valuemin="0" aria-valuemax="100"></div>
              </div>
              </div>
              </p> `
@@ -599,7 +599,7 @@ function initMap() {
         axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
                 params: {
                     address: location,
-                    key: 'AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8'
+                    key: 'AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI'
                 }
 
 
@@ -875,7 +875,7 @@ function initMap() {
 
     // reverse geo coding
     function reverseGeocoding(Latitude, longitude) {
-        const KEY = "AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8";
+        const KEY = "AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI";
         const LAT = -1.270102;
         const LNG = 36.8589333;
         let url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${Latitude},${longitude}&key=${KEY}`;

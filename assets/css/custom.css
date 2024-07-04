@@ -3,11 +3,11 @@
             }
             
             body[data-sidebar=dark] .mm-active .active i {
-                color: #2fb895!important;
+                color:#ffcf01!important;
             }
             
             body[data-sidebar=dark] .mm-active .active {
-                color: #2fb895!important;
+                color: #ffcf01!important;
             }
             
             .breadcrumb-item+.breadcrumb-item::before {
@@ -754,11 +754,11 @@
             }
             
             body[data-sidebar=dark] .navbar-brand-box {
-                background: #1B1F24;
+                background: #00337f;
             }
             
             body[data-sidebar=dark] .vertical-menu {
-                background: #121418;
+                background: #004c8e;
             }
             
             .navbar-brand-box .logo-sm {
@@ -1297,7 +1297,7 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(to right, #2fb895b8 0%, rgb(18 13 12 / 63%) 100%);
+                background:linear-gradient(to right, #2e3191 0%, rgb(18 13 12 / 63%) 100%);
             }
 
             .revenue-top .list-group-item{

@@ -698,11 +698,11 @@ body[data-sidebar=dark] .vertical-menu {
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li a {
-    color: #a6b0cf
+    color: #adc5db
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li a i {
-    color: #6a7187
+    color: #ffffffad
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li a:hover {
@@ -779,7 +779,7 @@ body[data-sidebar=dark] .mm-active .active i {
 }
 
 body[data-sidebar=dark] .menu-title {
-    color: #6a7187
+    color: #ffffff47
 }
 
 body[data-layout=horizontal] .main-content {
