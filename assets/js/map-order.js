@@ -123,6 +123,28 @@ function initMap() {
     }
 
     //multiple sided plate
+    
+
+    var redDot = {
+        url: "https://media.giphy.com/media/cxSrNIbCgY6LESB4SA/giphy.gif", // url
+        scaledSize: new google.maps.Size(45, 45), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    }
+
+    var greenDot = {
+        url: "assets/images/map-assets/dotGreen2.gif", // url
+        scaledSize: new google.maps.Size(45, 45), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    }
+
+    var yellowDot = {
+        url: "assets/images/map-assets/dotYellow.gif", // url
+        scaledSize: new google.maps.Size(45, 45), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    }
 
     var multiPlate = {
         url: "assets/images/map-assets/multiple-plates.svg", // url
@@ -194,8 +216,8 @@ function initMap() {
 
     //the map options
     var options = {
-        zoom: 13,
-        center: {lat: -1.29889, lng: 36.8386003 }
+        zoom: 15,
+        center: { lat: -1.3295, lng: 36.8461  }
     }
 
 
@@ -302,31 +324,324 @@ function initMap() {
     //inactive agent
     addMarker({
         coords: { lat: -1.29889, lng: 36.8386003 },
-        iconImage: inactiveAgent,
+        iconImage: redDot,
         content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Account Loggin at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"> <strong>23 Tasks of 54 (42.6%) completed <strong>Today</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 42.6%" aria-valuenow="42.6" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
     });
 
     //active agent
     addMarker({
         coords: { lat: -1.3289, lng: 36.8452003 },
-        iconImage: activeAgent,
+        iconImage: greenDot,
         content: `<p class="d-none">agent|plate num</p>
-            <h6 class="text-capitalize d-flex align-items-center">
-            <span class="offline-agent mr-2"></span> 
-            <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
-            </h6>
-             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
-             <p>Most recent activity: <strong>Reparing Damaged Transfomer Transformer</strong>
-             <div class="listview text-align-left text-capitalize pl-0">  
-             <div class="listview__header text-align-left text-capitalize text-left">
-             <strong>23 Tasks of 54 (42.6%) completed <strong>Today</strong>
-             </div> 
-             <div class="progress"> 
-             <div class="progress-bar progress-bar-warning" style="width: 42.6%" aria-valuenow="42.6" aria-valuemin="0" aria-valuemax="100"></div>
-             </div>
-             </div>
-             </p> `
+<h6 class="text-capitalize d-flex align-items-center">
+    <span class="offline-agent mr-2 bg-success"></span> 
+    <span>Completed Task <small><strong></strong></small></span>
+</h6>
+
+<!-- Completed Work Order Section -->
+<div class="completed-work-order mt-3">
+    <h6 class="text-capitalize"><strong>Completed Work Order</strong></h6>
+    <p><strong>Task:</strong> Meter Installation</p>
+    <p><strong>Location:</strong> Nairobi CBD</p>
+    <p><strong>Completed On:</strong> 12 Oct 2024, 3:30 PM</p>
+    <p><strong>Agent:</strong> Alex Wanjala</p>
+    <p><strong>Status:</strong> <span class="badge rounded-pill bg-success">Completed</span></p>
+</div>
+`
     });
+
+    // Marker 1
+addMarker({
+    coords: { lat: -1.3295, lng: 36.8461 },
+    iconImage: greenDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-success"></span> 
+        <span>Completed Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Completed Work Order Section -->
+    <div class="completed-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Completed Work Order</strong></h6>
+        <p><strong>Task:</strong> Transformer Maintenance</p>
+        <p><strong>Location:</strong> Westlands, Nairobi</p>
+        <p><strong>Completed On:</strong> 12 Oct 2024, 11:00 AM</p>
+        <p><strong>Agent:</strong> Mercy Kamau</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-success">Completed</span></p>
+    </div>
+    `
+});
+
+// Marker 2
+addMarker({
+    coords: { lat: -1.3278, lng: 36.8440 },
+    iconImage: greenDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-success"></span> 
+        <span>Completed Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Completed Work Order Section -->
+    <div class="completed-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Completed Work Order</strong></h6>
+        <p><strong>Task:</strong> Cable Replacement</p>
+        <p><strong>Location:</strong> Kilimani, Nairobi</p>
+        <p><strong>Completed On:</strong> 12 Oct 2024, 1:15 PM</p>
+        <p><strong>Agent:</strong> Peter Otieno</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-success">Completed</span></p>
+    </div>
+    `
+});
+
+// Marker 3
+// Marker 1
+addMarker({
+    coords: { lat: -1.3295, lng: 36.8461 },
+    iconImage: greenDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-success"></span> 
+        <span>Completed Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Completed Work Order Section -->
+    <div class="completed-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Completed Work Order</strong></h6>
+        <p><strong>Task:</strong> Transformer Maintenance</p>
+        <p><strong>Location:</strong> Westlands, Nairobi</p>
+        <p><strong>Completed On:</strong> 12 Oct 2024, 11:00 AM</p>
+        <p><strong>Agent:</strong> Mercy Kamau</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-success">Completed</span></p>
+    </div>
+    `
+});
+
+// Marker 2
+addMarker({
+    coords: { lat: -1.3278, lng: 36.8440 },
+    iconImage: greenDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-success"></span> 
+        <span>Completed Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Completed Work Order Section -->
+    <div class="completed-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Completed Work Order</strong></h6>
+        <p><strong>Task:</strong> Cable Replacement</p>
+        <p><strong>Location:</strong> Kilimani, Nairobi</p>
+        <p><strong>Completed On:</strong> 12 Oct 2024, 1:15 PM</p>
+        <p><strong>Agent:</strong> Peter Otieno</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-success">Completed</span></p>
+    </div>
+    `
+});
+
+
+addMarker({
+    coords: { lat: -1.3290, lng: 36.8475 },
+    iconImage: redDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-danger"></span> 
+        <span>Overdue Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Overdue Work Order Section -->
+    <div class="overdue-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Overdue Work Order</strong></h6>
+        <p><strong>Task:</strong> Pole Inspection</p>
+        <p><strong>Location:</strong> Upper Hill, Nairobi</p>
+        <p><strong>Due Date:</strong> 10 Oct 2024, 5:00 PM</p>
+        <p><strong>Agent:</strong> John Mwangi</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-danger">Overdue</span></p>
+    </div>
+    `
+});
+
+// Overdue Task 1
+addMarker({
+    coords: { lat: -1.3301, lng: 36.8490 },
+    iconImage: redDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-danger"></span> 
+        <span>Overdue Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Overdue Work Order Section -->
+    <div class="overdue-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Overdue Work Order</strong></h6>
+        <p><strong>Task:</strong> Transformer Maintenance</p>
+        <p><strong>Location:</strong> Hurlingham, Nairobi</p>
+        <p><strong>Due Date:</strong> 10 Oct 2024, 1:30 PM</p>
+        <p><strong>Agent:</strong> Samuel Otieno</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-danger">Overdue</span></p>
+    </div>
+    `
+});
+
+// Overdue Task 2
+addMarker({
+    coords: { lat: -1.3275, lng: 36.8448 },
+    iconImage: redDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-danger"></span> 
+        <span>Overdue Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Overdue Work Order Section -->
+    <div class="overdue-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Overdue Work Order</strong></h6>
+        <p><strong>Task:</strong> Cable Repair</p>
+        <p><strong>Location:</strong> Kilimani, Nairobi</p>
+        <p><strong>Due Date:</strong> 9 Oct 2024, 4:00 PM</p>
+        <p><strong>Agent:</strong> Mary Ndungu</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-danger">Overdue</span></p>
+    </div>
+    `
+});
+
+// Overdue Task 3
+
+addMarker({
+    coords: { lat: -1.3260, lng: 36.8501 },
+    iconImage: yellowDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-warning"></span> 
+        <span>Ongoing Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Ongoing Work Order Section -->
+    <div class="ongoing-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Ongoing Work Order</strong></h6>
+        <p><strong>Task:</strong> Meter Calibration</p>
+        <p><strong>Location:</strong> Westlands, Nairobi</p>
+        <p><strong>Started On:</strong> 11 Oct 2024, 8:30 AM</p>
+        <p><strong>Agent:</strong> Christine Achieng</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-warning">In Progress</span></p>
+    </div>
+    `
+});
+
+// Marker 1: Ongoing Task in Kilimani
+addMarker({
+    coords: { lat: -1.2921, lng: 36.7819 },
+    iconImage: yellowDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-warning"></span> 
+        <span>Ongoing Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Ongoing Work Order Section -->
+    <div class="ongoing-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Ongoing Work Order</strong></h6>
+        <p><strong>Task:</strong> Electrical Repair</p>
+        <p><strong>Location:</strong> Kilimani, Nairobi</p>
+        <p><strong>Started On:</strong> 10 Oct 2024, 9:00 AM</p>
+        <p><strong>Agent:</strong> Peter Kariuki</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-warning">In Progress</span></p>
+    </div>
+    `
+});
+
+// Marker 2: Ongoing Task in Parklands
+addMarker({
+    coords: { lat: -1.2683, lng: 36.8126 },
+    iconImage: yellowDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-warning"></span> 
+        <span>Ongoing Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Ongoing Work Order Section -->
+    <div class="ongoing-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Ongoing Work Order</strong></h6>
+        <p><strong>Task:</strong> Water Leak Inspection</p>
+        <p><strong>Location:</strong> Parklands, Nairobi</p>
+        <p><strong>Started On:</strong> 12 Oct 2024, 11:30 AM</p>
+        <p><strong>Agent:</strong> Lucy Njoki</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-warning">In Progress</span></p>
+    </div>
+    `
+});
+
+// Marker 3: Ongoing Task in South B
+addMarker({
+    coords: { lat: -1.3032, lng: 36.8569 },
+    iconImage: yellowDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-warning"></span> 
+        <span>Ongoing Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Ongoing Work Order Section -->
+    <div class="ongoing-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Ongoing Work Order</strong></h6>
+        <p><strong>Task:</strong> Street Light Installation</p>
+        <p><strong>Location:</strong> South B, Nairobi</p>
+        <p><strong>Started On:</strong> 11 Oct 2024, 2:00 PM</p>
+        <p><strong>Agent:</strong> James Otieno</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-warning">In Progress</span></p>
+    </div>
+    `
+});
+
+// Marker 4: Ongoing Task in Kasarani
+addMarker({
+    coords: { lat: -1.2214, lng: 36.8944 },
+    iconImage: yellowDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-warning"></span> 
+        <span>Ongoing Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Ongoing Work Order Section -->
+    <div class="ongoing-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Ongoing Work Order</strong></h6>
+        <p><strong>Task:</strong> Transformer Maintenance</p>
+        <p><strong>Location:</strong> Kasarani, Nairobi</p>
+        <p><strong>Started On:</strong> 11 Oct 2024, 3:15 PM</p>
+        <p><strong>Agent:</strong> Sarah Muthoni</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-warning">In Progress</span></p>
+    </div>
+    `
+});
+
+// Marker 5: Ongoing Task in Industrial Area
+addMarker({
+    coords: { lat: -1.3066, lng: 36.8630 },
+    iconImage: yellowDot,
+    content: `<p class="d-none">agent|plate num</p>
+    <h6 class="text-capitalize d-flex align-items-center">
+        <span class="offline-agent mr-2 bg-warning"></span> 
+        <span>Ongoing Task <small><strong></strong></small></span>
+    </h6>
+
+    <!-- Ongoing Work Order Section -->
+    <div class="ongoing-work-order mt-3">
+        <h6 class="text-capitalize"><strong>Ongoing Work Order</strong></h6>
+        <p><strong>Task:</strong> Power Line Repair</p>
+        <p><strong>Location:</strong> Industrial Area, Nairobi</p>
+        <p><strong>Started On:</strong> 10 Oct 2024, 4:30 PM</p>
+        <p><strong>Agent:</strong> Kevin Mwangi</p>
+        <p><strong>Status:</strong> <span class="badge rounded-pill bg-warning">In Progress</span></p>
+    </div>
+    `
+});
+
+
+
+
+
 
    
 
