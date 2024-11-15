@@ -778,12 +778,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Daily Attendace</h4>
+                                <h4 class="mb-sm-0 font-size-18">Work Orders Report summary</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0 text-uppercase">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Daily attendance</li>
+                                        <li class="breadcrumb-item active">Work Orders</li>
+                                        <li class="breadcrumb-item active">Work Orders Summary Report</li>
                                     </ol>
                                 </div>
 
@@ -831,141 +832,89 @@
                               
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table id="#" class="table table-hover table-striped table-bordered">
+                                        <table id="work-order-table" class="table table-hover table-striped table-bordered">
                                             <thead class="table-dark text-capitalize">
                                                 <tr>
-                                                    <th>Date</th>
-                                                    <th>Total Check-Ins</th>
-                                                    <th>Absentees</th>
-                                                    <th class="">Totals</th>
-                                                    <th></th>
-                                                                             
+                                                    <th>Task Type</th>
+                                                    <th>Completed</th>
+                                                    <th>Pending</th>
+                                                    <th>Overdue</th>
+                                                    <th>Total</th>
                                                 </tr>
                                             </thead>
                                             <tfoot class="table-dark">
                                                 <tr>
-                                                    <th>30 Days</th>
-                                                    <th class="text-success"> 3456</th>
-                                                    <th class="text-danger">789</th>
-                                                    <th class="text-info">3456</th>
-                                                    <th class="text-right"></th>
-                                                    
-                                                  </tr>
+                                                    <th>Total</th>
+                                                    <th class="text-success">120</th>
+                                                    <th class="text-danger">45</th>
+                                                    <th class="text-info">30</th>
+                                                    <th>195</th>
+                                                </tr>
                                             </tfoot>
-    
-    
                                             <tbody class="table-sm">
-                                              <tr>
-                                                <th>31 Aug 2023</th>
-                                                <td>
-                                                    <span class="fw-bold text-success">234</span>
-                                                </td>
-                                                <td>
-                                                    <span class="fw-bold text-danger">20</span>
-                                                </td>  
-                                                
-                                                <td>
-                                                    <span class="fw-bold text-black">254</span>
-                                                </td> 
-                                                <td class="text-right">
-                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
-                                                </td> 
-                                              </tr>
-
-                                              <tr>
-                                                <th>30 Aug 2023</th>
-                                                <td>
-                                                    <span class="fw-bold text-success">234</span>
-                                                </td>
-                                                <td>
-                                                    <span class="fw-bold text-danger">20</span>
-                                                </td>  
-                                                
-                                                <td>
-                                                    <span class="fw-bold text-black">254</span>
-                                                </td>  
-                                                <td class="text-right">
-                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
-                                                </td> 
-                                              </tr>
-
-                                              <tr>
-                                                <th>29 Aug 2023</th>
-                                                <td>
-                                                    <span class="fw-bold text-success">234</span>
-                                                </td>
-                                                <td>
-                                                    <span class="fw-bold text-danger">20</span>
-                                                </td>  
-                                                
-                                                <td>
-                                                    <span class="fw-bold text-black">254</span>
-                                                </td>  
-                                                <td class="text-right">
-                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
-                                                </td> 
-                                              </tr>
-
-                                              
-                                              <tr>
-                                                <th>28 Aug 2023</th>
-                                                <td>
-                                                    <span class="fw-bold text-success">234</span>
-                                                </td>
-                                                <td>
-                                                    <span class="fw-bold text-danger">20</span>
-                                                </td>  
-                                                
-                                                <td>
-                                                    <span class="fw-bold text-black">254</span>
-                                                </td> 
-                                                <td class="text-right">
-                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
-                                                </td>  
-                                              </tr>
-
-                                              
-                                              <tr>
-                                                <th>27 Aug 2023</th>
-                                                <td>
-                                                    <span class="fw-bold text-success">234</span>
-                                                </td>
-                                                <td>
-                                                    <span class="fw-bold text-danger">20</span>
-                                                </td>  
-                                                
-                                                <td>
-                                                    <span class="fw-bold text-black">254</span>
-                                                </td> 
-                                                <td class="text-right">
-                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
-                                                </td>  
-                                              </tr>
-
-                                              
-                                              <tr>
-                                                <th>26 Aug 2023</th>
-                                                <td>
-                                                    <span class="fw-bold text-success">234</span>
-                                                </td>
-                                                <td>
-                                                    <span class="fw-bold text-danger">20</span>
-                                                </td>  
-                                                
-                                                <td>
-                                                    <span class="fw-bold text-black">254</span>
-                                                </td> 
-                                                <td class="text-right">
-                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
-                                                </td>  
-                                              </tr>
-
-                                             
-
-                                             
-                                             
+                                                <tr>
+                                                    <th>Reconnection</th>
+                                                    <td>
+                                                        <span class="fw-bold text-success">50</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-danger">10</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-info">5</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-black">65</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Disconnection</th>
+                                                    <td>
+                                                        <span class="fw-bold text-success">30</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-danger">15</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-info">10</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-black">55</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Follow-Up</th>
+                                                    <td>
+                                                        <span class="fw-bold text-success">25</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-danger">10</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-info">5</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-black">40</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Meter Inspection</th>
+                                                    <td>
+                                                        <span class="fw-bold text-success">15</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-danger">10</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-info">10</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-bold text-black">35</span>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
+                                        
                                     </div>
                                 </div>
                                 <div class="card-footer bg-white">
